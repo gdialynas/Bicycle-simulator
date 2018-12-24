@@ -1,0 +1,616 @@
+Full Name;Value;Units;Parameter;Read/Write
+Analog input low pass filter cutoff frequency;100;Hz;AIN.CUTOFF;read-write
+Analog input signal deadband;0;V;AIN.DEADBAND;read-write
+Analog input Deadband Mode;0 - Deadband;;AIN.DEADBANDMODE;read-write
+Analog input torque scale;1,5;Arms/V;AIN.ISCALE;read-write
+Analog input mode;1 - Command Source;;AIN.MODE;read-write
+Analog input offset;-0,172;V;AIN.OFFSET;read-write
+Analog input position scale;0;deg/V;AIN.PSCALE;read-write
+Analog input signal;0,001;V;AIN.VALUE;read-only
+Analog input velocity scale;25;(deg/s)/V;AIN.VSCALE;read-write
+Analog output low pass filter cutoff frequency;5.000,00;Hz;AOUT.CUTOFF;read-write
+Analog output debug address;4;;AOUT.DEBUGADDR;read-write
+Analog output debug type;0 - Illegal type;;AOUT.DEBUGDATATYPE;read-write
+Analog output debug scale;1;;AOUT.DEBUGSCALE;read-write
+Analog output torque scale;1,5;Arms/V;AOUT.ISCALE;read-write
+Analog output mode;4 - Actual Current;;AOUT.MODE;read-write
+Analog output offset;0;V;AOUT.OFFSET;read-write
+Analog output position scale;0;deg/V;AOUT.PSCALE;read-write
+Analog output value;-0,086;V;AOUT.VALUE;read-only
+Analog output user value;0;V;AOUT.VALUEU;read-write
+Analog output velocity scale;0,359;(deg/s)/V;AOUT.VSCALE;read-write
+Bode excitation gap;2;;BODE.EXCITEGAP;read-write
+Bode Frequency;0;;BODE.FREQ;read-write
+Current amplitude;0;A;BODE.IAMP;read-write
+Bode plot: time above current threshold to trigger a fault;0;s;BODE.IFLIMIT;read-write
+Bode plot: current threshold to trigger a fault;0;A;BODE.IFTHRESH;read-write
+Injection point;1;;BODE.INJECTPOINT;read-write
+Bode mode;0;;BODE.MODE;read-write
+Bode plot: watchtog timer of the excitation;0;;BODE.MODETIMER;read-write
+Noise depth;19;;BODE.PRBDEPTH;read-write
+Velocity amplitude;0;deg/s;BODE.VAMP;read-write
+Bode plot: time above velocity threshold to trigger a fault;0;s;BODE.VFLIMIT;read-write
+Bode plot: velocity threshold to trigger a fault;0;deg/s;BODE.VFTHRESH;read-write
+Selects the capture edge;1 - Rising Edge;;CAP0.EDGE;read-write
+Enables or disables the related capture engine;0;;CAP0.EN;read-write
+Controls the precondition logic;0 - Trigger edge (ignore precondition);;CAP0.EVENT;read-write
+Selects the feedback to be captured (Modes 0&4);3 - Standard position;;CAP0.FBSOURCE;read-write
+Sets the filter for the capture source input;0 - Off;;CAP0.FILTER;read-write
+Selects the type of capture;0 - Single-shot Position;;CAP0.MODE;read-write
+Reads captured position value;0;deg;CAP0.PLFB;read-only
+Selects the capture precondition edge;1 - Rising Edge;;CAP0.PREEDGE;read-write
+Sets the filter for the precondition input source;0 - Off;;CAP0.PREFILTER;read-write
+Sets the precondition trigger;0 - DIN 1;;CAP0.PRESELECT;read-write
+Indicates capturing of Trigger Source;0;;CAP0.STATE;read-only
+Reads time capture;0;ns;CAP0.T;read-only
+Specifies the trigger source for the position capture;0 - DIN 1;;CAP0.TRIGGER;read-write
+Selects the capture edge;1 - Rising Edge;;CAP1.EDGE;read-write
+Enables or disables the related capture engine;0;;CAP1.EN;read-write
+Controls the precondition logic;0 - Trigger edge (ignore precondition);;CAP1.EVENT;read-write
+Selects the feedback to be captured (Modes 0&4);3 - Standard position;;CAP1.FBSOURCE;read-write
+Sets the filter for the capture source input;0 - Off;;CAP1.FILTER;read-write
+Selects the type of capture;0 - Single-shot Position;;CAP1.MODE;read-write
+Reads captured position value;0;deg;CAP1.PLFB;read-only
+Selects the capture precondition edge;1 - Rising Edge;;CAP1.PREEDGE;read-write
+Sets the filter for the precondition input source;0 - Off;;CAP1.PREFILTER;read-write
+Sets the precondition trigger;0 - DIN 1;;CAP1.PRESELECT;read-write
+Indicates capturing of Trigger Source;0;;CAP1.STATE;read-only
+Reads time capture;0;ns;CAP1.T;read-only
+Specifies the trigger source for the position capture;0 - DIN 1;;CAP1.TRIGGER;read-write
+Compare: phase advance on source signal;0;ms;CMP0.ADVANCE;read-write
+Compare: bound 1 of the modulo;0;deg;CMP0.MODBOUND1;read-write
+Compare: bound 2 of the modulo;0;deg;CMP0.MODBOUND2;read-write
+Compare: enable modulo on the source signal;0 - Disabled;;CMP0.MODEN;read-write
+Compare: current value of the source signal after modulo;13,251;deg;CMP0.MODVALUE;read-only
+Compare: mask on comparators'output;0;;CMP0.OUTMASK;read-write
+Compare: source signal used for the comparison;3 - Position Loop Feedback;;CMP0.SOURCE;read-write
+Compare: current value of the source signal;13,251;deg;CMP0.SOURCEVALUE;read-only
+Compare: phase advance on source signal;0;ms;CMP1.ADVANCE;read-write
+Compare: bound 1 of the modulo;0;deg;CMP1.MODBOUND1;read-write
+Compare: bound 2 of the modulo;0;deg;CMP1.MODBOUND2;read-write
+Compare: enable modulo on the source signal;0 - Disabled;;CMP1.MODEN;read-write
+Compare: current value of the source signal after modulo;13,251;deg;CMP1.MODVALUE;read-only
+Compare: mask on comparators'output;0;;CMP1.OUTMASK;read-write
+Compare: source signal used for the comparison;3 - Position Loop Feedback;;CMP1.SOURCE;read-write
+Compare: current value of the source signal;13,251;deg;CMP1.SOURCEVALUE;read-only
+Deceleration during active disable;10.000,17;rpm/s;CS.DEC;read-write
+State;0;;CS.STATE;read-only
+Time delay after velocity window;6;ms;CS.TO;read-write
+Velocity threshold for controlled stop;30,001;deg/s;CS.VTHRESH;read-write
+Digital input 1 filter;1 - 10µs;;DIN1.FILTER;read-write
+Digital input 1 polarity;0;;DIN1.INV;read-write
+Digital input 1 mode;0 - Off;;DIN1.MODE;read-write
+Digital input 1 Param;0;;DIN1.PARAM;read-write
+Digital input 1 state;0;;DIN1.STATE;read-only
+Digital input 2 filter;1 - 10µs;;DIN2.FILTER;read-write
+Digital input 2 polarity;0;;DIN2.INV;read-write
+Digital input 2 mode;0 - Off;;DIN2.MODE;read-write
+Digital input 2 Param;0;;DIN2.PARAM;read-write
+Digital input 2 state;0;;DIN2.STATE;read-only
+Digital input 3 filter;2 - 163µs;;DIN3.FILTER;read-write
+Digital input 3 polarity;0;;DIN3.INV;read-write
+Digital input 3 mode;0 - Off;;DIN3.MODE;read-write
+Digital input 3 Param;0;;DIN3.PARAM;read-write
+Digital input 3 state;0;;DIN3.STATE;read-only
+Digital input 4 filter;2 - 163µs;;DIN4.FILTER;read-write
+Digital input 4 polarity;0;;DIN4.INV;read-write
+Digital input 4 mode;0 - Off;;DIN4.MODE;read-write
+Digital input 4 Param;0;;DIN4.PARAM;read-write
+Digital input 4 state;0;;DIN4.STATE;read-only
+Digital input 5 filter;2 - 163µs;;DIN5.FILTER;read-write
+Digital input 5 polarity;0;;DIN5.INV;read-write
+Digital input 5 mode;0 - Off;;DIN5.MODE;read-write
+Digital input 5 Param;0;;DIN5.PARAM;read-write
+Digital input 5 state;0;;DIN5.STATE;read-only
+Digital input 6 filter;2 - 163µs;;DIN6.FILTER;read-write
+Digital input 6 polarity;0;;DIN6.INV;read-write
+Digital input 6 mode;0 - Off;;DIN6.MODE;read-write
+Digital input 6 Param;0;;DIN6.PARAM;read-write
+Digital input 6 state;0;;DIN6.STATE;read-only
+Digital input 7 filter;2 - 163µs;;DIN7.FILTER;read-write
+Digital input 7 polarity;0;;DIN7.INV;read-write
+Digital input 7 mode;0 - Off;;DIN7.MODE;read-write
+Digital input 7 Param;0;;DIN7.PARAM;read-write
+Digital input 7 state;0;;DIN7.STATE;read-only
+Digital input 9 state;0;;DIN9.STATE;read-only
+Digital input 10 state;0;;DIN10.STATE;read-only
+Digital input 11 state;0;;DIN11.STATE;read-only
+Digital input high command 1;empty;;DIN.HCMD1;read-write
+Digital input high command 2;empty;;DIN.HCMD2;read-write
+Digital input high command 3;empty;;DIN.HCMD3;read-write
+Digital input high command 4;empty;;DIN.HCMD4;read-write
+Digital input low command 1;empty;;DIN.LCMD1;read-write
+Digital input low command 2;empty;;DIN.LCMD2;read-write
+Digital input low command 3;empty;;DIN.LCMD3;read-write
+Digital input low command 4;empty;;DIN.LCMD4;read-write
+Rotary switch position;0;;DIN.ROTARY;read-only
+Digital input states - all IO;0 0 0 0 0 0 0;;DIN.STATES;read-only
+Direction of the DIO9 connector pin;0 - Input;;DIO9.DIR;read-write
+Inversion of the electrical signal from/to the DIO9 connector pin;0 - Normal;;DIO9.INV;read-write
+Direction of the DIO10 connector pin;0 - Input;;DIO10.DIR;read-write
+Inversion of the electrical signal from/to the DIO10 connector pin;0 - Normal;;DIO10.INV;read-write
+Direction of the DIO11 connector pin;0 - Input;;DIO11.DIR;read-write
+Inversion of the electrical signal from/to the DIO11 connector pin;0 - Normal;;DIO11.INV;read-write
+Digital output 1 mode;0 - User (Default = 0);;DOUT1.MODE;read-write
+Digital output 1 param;0;;DOUT1.PARAM;read-write
+Digital output 1 state;0;;DOUT1.STATE;read-only
+Digital output 1 user state;0;;DOUT1.STATEU;read-write
+Digital output 2 mode;0 - User (Default = 0);;DOUT2.MODE;read-write
+Digital output 2 param;0;;DOUT2.PARAM;read-write
+Digital output 2 state;0;;DOUT2.STATE;read-only
+Digital output 2 user state;0;;DOUT2.STATEU;read-write
+Digital output 9 mode;0 - User (Default = 0);;DOUT9.MODE;read-write
+Digital output 9 param;0;;DOUT9.PARAM;read-write
+Digital output 9 state;0;;DOUT9.STATE;read-only
+Digital output 9 user state;0;;DOUT9.STATEU;read-write
+Digital output 10 mode;0 - User (Default = 0);;DOUT10.MODE;read-write
+Digital output 10 param;0;;DOUT10.PARAM;read-write
+Digital output 10 state;0;;DOUT10.STATE;read-only
+Digital output 10 user state;0;;DOUT10.STATEU;read-write
+Digital output 11 mode;0 - User (Default = 0);;DOUT11.MODE;read-write
+Digital output 11 param;0;;DOUT11.PARAM;read-write
+Digital output 11 state;0;;DOUT11.STATE;read-only
+Digital output 11 user state;0;;DOUT11.STATEU;read-write
+Digital output control;0;;DOUT.CTRL;read-write
+Relay mode;0 - Fault Mode;;DOUT.RELAYMODE;read-write
+Digital output states - all IO;0 0;;DOUT.STATES;read-only
+Drive acceleration ramp - velocity loop;10.000,17;rpm/s;DRV.ACC;read-write
+Drive active;0;;DRV.ACTIVE;read-only
+Drive: delay between command (scripts/macros);0;;DRV.CMDDELAY;read-write
+Drive command source;3 - Analog;;DRV.CMDSOURCE;read-write
+Device custom identifier;-;;DRV.CUSTOMIDENTIFIER;read-write
+Dynamic break peak current;1;Arms;DRV.DBILIMIT;read-write
+Drive deceleration ramp - velocity loop;10.000,17;rpm/s;DRV.DEC;read-write
+Drive direction;0;;DRV.DIR;read-write
+Disable mode;0 - Disable axis immediately;;DRV.DISMODE;read-write
+Enable/disable sources status for the device;4;;DRV.DISSOURCES;read-only
+Indicates which enable/disable sources are available for the device;127;;DRV.DISSOURCESMASK;read-only
+Sets the emergency timeout;1.000;ms;DRV.DISTO;read-write
+Indicates if download is allowed or not;1;;DRV.DOWNLOADALLOWED;read-only
+Enable monitoring of the generated pulses to detect if max EMU-speed is exceeded;0;;DRV.EMUECHECKSPEED;read-write
+Emulation direction;0;;DRV.EMUEDIR;read-write
+Emulation mode;0 - Input (No EEO Output);;DRV.EMUEMODE;read-write
+Emulation turn;0;rev;DRV.EMUEMTURN;read-write
+Emulation pulse width;4,08;;DRV.EMUEPULSEWIDTH;read-write
+Emulation resolution;0;lines/rev;DRV.EMUERES;read-write
+Step command for encoder-emulation;0;;DRV.EMUESTEPCMD;read-write
+Step mode for encoder-emulation;2 - Fieldbus sends position values;;DRV.EMUESTEPMODE;read-write
+Emulation offset;57.938;1 rev=65536;DRV.EMUEZOFFSET;read-write
+Software enable default;1 - Software enabled at startup;;DRV.ENDEFAULT;read-write
+Drive: id of current fault at index 1 (lower index is higher priority);0;;DRV.FAULT1;read-only
+Drive: id of current fault at index 2 (lower index is higher priority);0;;DRV.FAULT2;read-only
+Drive: id of current fault at index 3 (lower index is higher priority);0;;DRV.FAULT3;read-only
+Drive: id of current fault at index 4 (lower index is higher priority);0;;DRV.FAULT4;read-only
+Drive: id of current fault at index 5 (lower index is higher priority);0;;DRV.FAULT5;read-only
+Drive: id of current fault at index 6 (lower index is higher priority);0;;DRV.FAULT6;read-only
+Drive: id of current fault at index 7 (lower index is higher priority);0;;DRV.FAULT7;read-only
+Drive: id of current fault at index 8 (lower index is higher priority);0;;DRV.FAULT8;read-only
+Drive: id of current fault at index 9 (lower index is higher priority);0;;DRV.FAULT9;read-only
+Drive: id of current fault at index 10 (lower index is higher priority);0;;DRV.FAULT10;read-only
+Drive fault display mode;0 - Highest priority;;DRV.FAULTDISPLAYMODE;read-write
+Drive hand wheel;0;Counts;DRV.HANDWHEEL;read-only
+Select the feedback for handwheel operation;2;;DRV.HANDWHEELSRC;read-write
+Delay to disable the drive when HW enable is going inactive;0;;DRV.HWENDELAY;read-write
+Hardware Enable Mode;0 - Rising edge of hardware enable will clear drive faults;;DRV.HWENMODE;read-write
+Drive continuous current;6;Arms;DRV.ICONT;read-only
+Drive peak current;18;Arms;DRV.IPEAK;read-only
+current used during Drive zero mode;0;Arms;DRV.IZERO;read-write
+Drive memory address;CBodePlot.bode_feature;;DRV.MEMADDR;read-write
+Drive memory value;4;;DRV.MEMDATA;read-write
+DRV.MOTIONDISSOURCES;1;;DRV.MOTIONDISSOURCES;read-only
+Drive motion status;0;;DRV.MOTIONSTAT;read-only
+Drive name;SteerMotor;;DRV.NAME;read-write
+Checksum on the NV parameters value;4.486;;DRV.NVCHECK;read-only
+Drive operation mode;1 - Velocity Mode;;DRV.OPMODE;read-write
+DRV.POWERBOARDID;;;DRV.POWERBOARDID;read-only
+Drive password;N/A;;DRV.PWD;read-write
+DRV.PWDFB;N/A;;DRV.PWDFB;read-write
+Sets the value returned from SYS.MEMREAD to either hex or decimal;10;;DRV.READFORMAT;read-write
+Drive: bitwise coded list of required parameters to enable the drive;0;;DRV.SETUPREQBITS;read-only
+Drive type;5;;DRV.TYPE;read-only
+Drive: id of current warning at index 1 (lower index is higher priority);0;;DRV.WARNING1;read-only
+Drive: id of current warning at index 2 (lower index is higher priority);0;;DRV.WARNING2;read-only
+Drive: id of current warning at index 3 (lower index is higher priority);0;;DRV.WARNING3;read-only
+Drive zero mode;0;;DRV.ZERO;read-write
+EtherNet/IP: connected to a controller;0;;EIP.CONNECTED;read-only
+EtherNet/IP: enable/disable the logging of EtherNet/IP requests;0 - Disable;;EIP.MSGLOG;read-write
+EtherNet/IP: position unit;65.536;;EIP.POSUNIT;read-write
+EtherNet/IP: profile unit;65.536;;EIP.PROFUNIT;read-write
+Gets/Sets the Resulting Action for Fault 130;0 - Disable Amplifier;;FAULT130.ACTION;read-write
+Gets/Sets the Resulting Action for Fault 131;0 - Disable Amplifier;;FAULT131.ACTION;read-write
+Gets/Sets the Resulting Action for Fault 132;0 - Disable Amplifier;;FAULT132.ACTION;read-write
+Gets/Sets the Resulting Action for Fault 134;0 - Disable Amplifier;;FAULT134.ACTION;read-write
+Gets/Sets the Resulting Action for Fault 139;0 - Disable Amplifier;;FAULT139.ACTION;read-write
+Gets/Sets the Resulting Action for Fault 451;0 - Disable Amplifier;;FAULT451.ACTION;read-write
+Gets/Sets the Resulting Action for Fault 570;4 - Generate Warning (motion will continue);;FAULT570.ACTION;read-write
+Gets/Sets the Resulting Action for Fault 702;0 - Disable Amplifier;;FAULT702.ACTION;read-write
+Position Feedback Number of Biss Sensor Bits;32;;FB1.BISSBITS;read-write
+FB1.CALTHRESH;33.525,00;;FB1.CALTHRESH;read-write
+Position feedback rotary encoder resolution;512;;FB1.ENCRES;read-only
+Hall U input state;0;;FB1.HALLSTATEU;read-only
+Hall V input state;1;;FB1.HALLSTATEV;read-only
+Hall W input state;1;;FB1.HALLSTATEW;read-only
+Position feedback type identified;30;;FB1.IDENTIFIED;read-only
+Initial feedback value(signed/unsigned);1;;FB1.INITSIGNED;read-write
+FB1.LASTIDENTIFIED;30;;FB1.LASTIDENTIFIED;read-write
+Position feedback - mechanical position;158.090.094;Counts;FB1.MECHPOS;read-only
+Position feedback memory version;0.02;;FB1.MEMVER;read-only
+FB1.MOTORPHASE;0;deg;FB1.MOTORPHASE;read-write
+FB1.MOTORPOLES;10;;FB1.MOTORPOLES;read-write
+Position feedback offset;0;deg;FB1.OFFSET;read-write
+Initial feedback position;0;deg;FB1.ORIGIN;read-write
+Feedback 1 scaled position;158.090.109,00;Counts;FB1.P;read-only
+Feedback 1 counting direction (impacts only FB1.P);0;;FB1.PDIR;read-write
+Commutation angle for encoder feedback;0;;FB1.PFIND;read-write
+Current value used during phase finding procedure;0;Arms;FB1.PFINDCMDU;read-write
+Feedback 1 scaling numerator (impacts only FB1.P);100;;FB1.PIN;read-write
+Feedback 1 position offset (impacts only FB1.P);0;Counts;FB1.POFFSET;read-write
+Position feedback poles;2;;FB1.POLES;read-write
+Feedback 1 scaling denominator (impacts only FB1.P);20;;FB1.POUT;read-write
+Drive PR base;20;;FB1.PSCALE;read-write
+Feedback 1 position unit (impacts only FB1.P);0 - Counts;Counts;FB1.PUNIT;read-write
+Nominal transformation ratio;0,5;;FB1.RESKTR;read-write
+Phase lag;-2;deg;FB1.RESREFPHASE;read-write
+Position feedback selection;#NAME?;;FB1.SELECT;read-write
+Controls tracking calibration algorithm;0;;FB1.TRACKINGCAL;read-write
+FB2 counting direction (impacts only FB2.P);0;;FB2.DIR;read-write
+Position Feedback Resolution;0;;FB2.ENCRES;read-write
+Feedback 2 Mode;0 - Input – A/B Signals;;FB2.MODE;read-write
+FB2.MOTORPHASE;0;deg;FB2.MOTORPHASE;read-write
+FB2.MOTORPOLES;0;;FB2.MOTORPOLES;read-write
+Feedback 2 scaled position;0;Counts;FB2.P;read-only
+Feedback 2 counting direction (impacts only FB2.P);0;;FB2.PDIR;read-write
+Feedback 2 scaling numerator (impacts only FB2.P);100;;FB2.PIN;read-write
+Feedback 2 position offset (impacts only FB2.P);0;Counts;FB2.POFFSET;read-write
+Feedback 2 scaling denominator (impacts only FB2.P);20;;FB2.POUT;read-write
+Feedback 2 position unit (impacts only FB2.P);0 - Counts;Counts;FB2.PUNIT;read-write
+Feedback 2 Source;0 - None;;FB2.SOURCE;read-write
+FB3.DIR;0;;FB3.DIR;read-write
+FB3.ENCRES;0;;FB3.ENCRES;read-write
+Selects the type of the feedback connected to X9;0 - EnDat 2.2 feedback device;;FB3.MODE;read-write
+FB3.MOTORPHASE;0;deg;FB3.MOTORPHASE;read-write
+FB3.MOTORPOLES;0;;FB3.MOTORPOLES;read-write
+Feedback 3 scaled position;0;Counts;FB3.P;read-only
+Feedback 3 counting direction (impacts only FB3.P);0;;FB3.PDIR;read-write
+Feedback 3 scaling numerator (impacts only FB3.P);100;;FB3.PIN;read-write
+Feedback 3 position offset (impacts only FB3.P);0;Counts;FB3.POFFSET;read-write
+Feedback 3 scaling denominator (impacts only FB3.P);20;;FB3.POUT;read-write
+Feedback 3 position unit (impacts only FB3.P);0 - Counts;Counts;FB3.PUNIT;read-write
+Flag indicating if any keyword is blocked;;;FBUS.BLOCKING;read-only
+FBUS.INTERPOLATEMODE;0;;FBUS.INTERPOLATEMODE;read-write
+Fieldbus parameter;125;;FBUS.PARAM01;read-write
+Fieldbus parameter;0;;FBUS.PARAM02;read-write
+Fieldbus parameter;0;;FBUS.PARAM03;read-write
+Fieldbus parameter;0;;FBUS.PARAM04;read-write
+Fieldbus parameter;0;;FBUS.PARAM05;read-write
+Fieldbus parameter;0;;FBUS.PARAM06;read-write
+Fieldbus parameter;0;;FBUS.PARAM07;read-write
+Fieldbus parameter;0;;FBUS.PARAM08;read-write
+Fieldbus parameter;0;;FBUS.PARAM09;read-write
+Fieldbus parameter;0;;FBUS.PARAM10;read-write
+Status of the PLL;PLL not activated;;FBUS.PLLSTATE;read-only
+Fieldbus phase locked loop threshold;5;Counts;FBUS.PLLTHRESH;read-write
+Protection level for parameters when fielbus is operational;0;;FBUS.PROTECTION;read-write
+Indicates/Drives the control of the drive;1;;FBUS.REMOTE;read-write
+Fieldbus cycle time;32;*62.5µs;FBUS.SAMPLEPERIOD;read-write
+Fieldbus state;;;FBUS.STATE;read-only
+Actual sync period;0;ns;FBUS.SYNCACT;read-only
+Sync distance;100.000;ns;FBUS.SYNCDIST;read-write
+Sync window;70.000;ns;FBUS.SYNCWND;read-write
+Fieldbus type;4;;FBUS.TYPE;read-only
+Maximum allowed acceleration for slave during gearing;240.000.008,19;rpm/s;GEAR.ACCMAX;read-write
+Minimum allowed deceleration for slave during gearing;240.000.008,19;rpm/s;GEAR.DECMAX;read-write
+Denominator of master-slave gear-ratio;1;;GEAR.IN;read-write
+Type of electronic gearing;0;;GEAR.MODE;read-write
+Numerator of the master-slave gear-ratio;1;;GEAR.OUT;read-write
+Maximum allowed velocity for slave during gearing;72.000,01;deg/s;GEAR.VMAX;read-write
+A GUI integer storage;0;;GUI.PARAM01;read-write
+A GUI integer storage;0;;GUI.PARAM02;read-write
+A GUI integer storage;0;;GUI.PARAM03;read-write
+A GUI integer storage;2;;GUI.PARAM04;read-write
+A GUI integer storage;1;;GUI.PARAM05;read-write
+A GUI integer storage;1;;GUI.PARAM06;read-write
+A GUI integer storage;1.000;;GUI.PARAM07;read-write
+A GUI integer storage;1;;GUI.PARAM08;read-write
+A GUI integer storage;1.000;;GUI.PARAM09;read-write
+A GUI integer storage;0;;GUI.PARAM10;read-write
+Homing acceleration;10.000,17;rpm/s;HOME.ACC;read-write
+Sets homing auto move flag;0 - Disabled;;HOME.AUTOMOVE;read-write
+Homing deceleration;10.000,17;rpm/s;HOME.DEC;read-write
+Homing direction;1 - Positive;;HOME.DIR;read-write
+Homing distance;0;deg;HOME.DIST;read-write
+Homing velocity factor;50;%;HOME.FEEDRATE;read-write
+Homing peak current;0,149;Arms;HOME.IPEAK;read-write
+Homing distance max;0;deg;HOME.MAXDIST;read-write
+Homing mode;0 - Use current position;;HOME.MODE;read-write
+Homing position;0;deg;HOME.P;read-write
+Homing position lag;180;deg;HOME.PERRTHRESH;read-write
+Homing velocity;359,999;deg/s;HOME.V;read-write
+Negative hardware limit switch;0;;HWLS.NEGSTATE;read-only
+Positive hardware limit switch;0;;HWLS.POSSTATE;read-only
+External feed-forward;0;Arms;IL.BUSFF;read-only
+Current command;0;Arms;IL.CMD;read-only
+Acceleration command;0;rpm/s;IL.CMDACC;read-only
+Current command - user;0;Arms;IL.CMDU;read-write
+Current command - D component;0;Arms;IL.DCMD;read-only
+Dead-time of two IGBTs;;ns;IL.DEADBAND;read-write
+Current feedback D component;-0,043;Arms;IL.DFB;read-only
+Drive foldback current limit;42;Arms;IL.DIFOLD;read-only
+Current feedback;-0,014;Arms;IL.FB;read-only
+Commutation source for the current loop;0 - Feedback 1;;IL.FBSOURCE;read-write
+Current feed-forward;0;Arms;IL.FF;read-only
+Foldback fault level;18;Arms;IL.FOLDFTHRESH;read-only
+User foldback fault level;18;Arms;IL.FOLDFTHRESHU;read-write
+Foldback warning level;0;Arms;IL.FOLDWTHRESH;read-write
+Current loop static friction feed-forward gain;0,183;A;IL.FRICTION;read-write
+Overall foldback current limit;26,531;Arms;IL.IFOLD;read-only
+Current - U winding of motor;0;A;IL.IUFB;read-only
+Current - V winding of motor;0;A;IL.IVFB;read-only
+Acceleration feed-forward;46,46;mArms/(rad/s^2);IL.KACCFF;read-write
+External feed-forward gain;0;;IL.KBUSFF;read-write
+Proportional gain;57,956;V/A;IL.KP;read-write
+Ratio of proportional gain - d component;1;;IL.KPDRATIO;read-only
+Current Gain Look Up Index;0;;IL.KPLOOKUPINDEX;read-write
+Current Gain Look Up Value;100;%;IL.KPLOOKUPVALUE;read-write
+Current loop viscous friction feed-forward gain;0;mArms/(rad/s);IL.KVFF;read-write
+Current limit - negative;-18;Arms;IL.LIMITN;read-write
+Current limit - positive;18;Arms;IL.LIMITP;read-write
+Foldback maximum time;4,831;s;IL.MFOLDD;read-only
+Foldback recovery time;183,369;s;IL.MFOLDR;read-only
+Foldback time constant;9,662;s;IL.MFOLDT;read-only
+Motor actual I2t load;0;%;IL.MI2T;read-only
+Motor I2t load warning threshold;85;%;IL.MI2TWTHRESH;read-write
+Foldback current limit;26,531;Arms;IL.MIFOLD;read-only
+Motor protection mode;0 - Motor Foldback Protection;;IL.MIMODE;read-write
+Current loop gravity;0;A;IL.OFFSET;read-write
+PWM frequency of the IGBTs;10,28;kHz;IL.PWMFREQ;read-write
+Current Loop - Torque Axis Voltage;0;Vrms;IL.VCMD;read-only
+Current loop - U winding voltage;0;V;IL.VUFB;read-only
+Current loop - V winding voltage;-1;V;IL.VVFB;read-only
+IP address;0.0.0.0;;IP.ADDRESS;read-write
+Gateway;0.0.0.0;;IP.GATEWAY;read-write
+Addressing mode;0 - Rotary switch(es);;IP.MODE;read-write
+Subnet mask;255.255.255.0;;IP.SUBNET;read-write
+Load Inertia;828;kg*cm^2;LOAD.INERTIA;read-write
+Modbus: Digital I/O states (bitwise);0;;MODBUS.DIO;read-only
+Modbus: Drive commands (bitwise);16;;MODBUS.DRV;read-write
+Modbus: Drive status information (bitwise);2;;MODBUS.DRVSTAT;read-only
+Modbus: enable/disable dynamic mapping functionality;0 - Disable;;MODBUS.DYNMAP;read-write
+Modbus: configure error mode;0;;MODBUS.ERRORMODE;read-write
+Modbus: Homing commands (bitwise);0;;MODBUS.HOME;read-write
+Modbus: Motor status information/command (bitwise);0;;MODBUS.MOTOR;read-write
+Modbus: enable/disable the logging of Modbus requests;0 - Disable;;MODBUS.MSGLOG;read-write
+Modbus: Motion task commands (bitwise);56.728;;MODBUS.MT;read-write
+Modbus: user units input parameter;1;;MODBUS.PIN;read-write
+Modbus: user units output parameter;1;;MODBUS.POUT;read-write
+Modbus: nb of bits defining the feedback resolution (per rev) over Modbus;20;;MODBUS.PSCALE;read-write
+Modbus: selects the scaling mode for Modbus values;1 - Modbus Specific;;MODBUS.SCALING;read-write
+Modbus: Service motion commands (bitwise);16;;MODBUS.SM;read-write
+Motor auto set;1 - On;;MOTOR.AUTOSET;read-write
+Motor: brake mode (present or not, specific);;;MOTOR.BRAKE;read-only
+Applies the brake immediately in all situations;0 - Apply brake when motor has stopped;;MOTOR.BRAKEIMM;read-write
+Motor: release the motor brake;0;;MOTOR.BRAKERLS;read-write
+Motor: brake status;Brake applied or not present;;MOTOR.BRAKESTATE;read-only
+Thermal constant of motor coil;3,906;mHz;MOTOR.CTF0;read-only
+Motor continuous current;4,687;Arms;MOTOR.ICONT;read-only
+Motor data status;1;;MOTOR.IDDATAVALID;read-only
+Motor direct axis peak current;0,894;Arms;MOTOR.IDMAX;read-write
+Motor D current (induction);0;Arms;MOTOR.IMID;read-write
+Motor rotor time constant (induction);100;ms;MOTOR.IMTR;read-write
+Motor inertia;1,453;kg*cm^2;MOTOR.INERTIA;read-only
+Motor peak current;19,25;Arms;MOTOR.IPEAK;read-only
+Motor Back EMF;47,655;Vrms/k-rpm;MOTOR.KE;read-only
+Motor torque constant;0,742;Nm/Arms;MOTOR.KT;read-only
+Motor l-l direct axis inductance;9,216;mH;MOTOR.LDLL;read-only
+Motor quadrature inductance saturation characteristic;450;Arms;MOTOR.LISAT;read-write
+Motor l-l quadrature inductance;9,216;mH;MOTOR.LQLL;read-only
+Motor name;AKM42G-XXCNDA00;;MOTOR.NAME;read-only
+Motor phase;0;deg;MOTOR.PHASE;read-write
+Motor 1st polynomial coefficient for phase advance;0;;MOTOR.PHSADVK1;read-write
+Motor 2nd polynomial coefficient for phase advance;0;1/Arms;MOTOR.PHSADVK2;read-write
+Motor pole pitch;32;mm;MOTOR.PITCH;read-write
+Motor poles;10;;MOTOR.POLES;read-only
+Motor resistance;2,515;Ohm;MOTOR.R;read-only
+Motor temperature protection thermistor type;0 - Single PTC Thermistor;;MOTOR.RTYPE;read-write
+Motor: brake apply delay before disabling the drive;75;ms;MOTOR.TBRAKEAPP;read-only
+Motor: brake release delay after enabling the drive;75;ms;MOTOR.TBRAKERLS;read-only
+Motor: timeout after a stop command to apply the brake (in any case);-1;ms;MOTOR.TBRAKETO;read-write
+Motor's temperature;71;Ohm;MOTOR.TEMP;read-only
+Motor's temperature in degree celsius;-32.768;degC;MOTOR.TEMPC;read-only
+Motor's temperature fault;2.000;Ohm;MOTOR.TEMPFAULT;read-write
+Motor's temperature warning;0;Ohm;MOTOR.TEMPWARN;read-write
+Motor type;0 - Rotary, Permanent Magnet;;MOTOR.TYPE;read-write
+Motor maximum speed;6.016;rpm;MOTOR.VMAX;read-only
+Motor maximum voltage;480;Vrms;MOTOR.VOLTMAX;read-only
+Induction motor minimum applied voltage;2;%;MOTOR.VOLTMIN;read-write
+Induction motor rated voltage;230;Vrms;MOTOR.VOLTRATED;read-write
+Induction motor rated velocity;0;deg/s;MOTOR.VRATED;read-write
+Motion task acceleration;0;rpm/s;MT.ACC;read-write
+Clear specific motion task;0;;MT.CLEAR;read-write
+Motion task control;0;;MT.CNTL;read-write
+Motion task deceleration;0;rpm/s;MT.DEC;read-write
+Motion task estop;-1;;MT.EMERGMT;read-write
+MT.FEEDRATE;100;;MT.FEEDRATE;read-write
+Starts a specific motion task;0;;MT.MOVE;read-write
+Motion task following number;0;;MT.MTNEXT;read-write
+Motion task number;0;;MT.NUM;read-write
+Motion task position;0;deg;MT.P;read-write
+Motion task table 0 name;S-Curve;;MT.T0NAME;read-write
+Motion task table 1 name;OneToOne;;MT.T1NAME;read-write
+Motion task table 2 name;no_name;;MT.T2NAME;read-write
+Motion task table 3 name;no_name;;MT.T3NAME;read-write
+Motion task table 4 name;no_name;;MT.T4NAME;read-write
+Motion task table 5 name;no_name;;MT.T5NAME;read-write
+Motion task table 6 name;no_name;;MT.T6NAME;read-write
+Motion task table 7 name;no_name;;MT.T7NAME;read-write
+Motion task download status;0;;MT.TDWNLDS;read-write
+Motion task download value;N/A;;MT.TDWNLDV;read-write
+Motion task following time;0;ms;MT.TNEXT;read-write
+Motion task customer table number;1;;MT.TNUM;read-write
+Motion task target position window;180;deg;MT.TPOSWND;read-write
+Motion task Retrieve size;50;;MT.TRETRIEVESIZE;read-write
+Motion task table size;3.000;;MT.TSIZE;read-only
+Motion task target velocity window;359,999;deg/s;MT.TVELWND;read-write
+Motion task velocity;0;deg/s;MT.V;read-write
+Motion task velocity command;0;deg/s;MT.VCMD;read-only
+Position command;13,251;deg;PL.CMD;read-only
+Position error;0;deg;PL.ERR;read-only
+Position maximum error;3.600,00;deg;PL.ERRFTHRESH;read-write
+Position error mode;0;;PL.ERRMODE;read-write
+Position error warning level;0;deg;PL.ERRWTHRESH;read-write
+Position feedback;13,251;deg;PL.FB;read-only
+Feedback source for the position loop;0 - Feedback 1;;PL.FBSOURCE;read-write
+Position command filter time (0=disabled);0;ms;PL.FILTERTIME;read-write
+Saturation of integral input;335,276;deg;PL.INTINMAX;read-write
+Saturation of integral output;335,276;deg;PL.INTOUTMAX;read-write
+Position loop integral gain;0;Hz;PL.KI;read-write
+Position loop proportional gain;0;(rev/s)/rev;PL.KP;read-write
+Position modulo 1;0;deg;PL.MODP1;read-write
+Position modulo 2;5.760,00;deg;PL.MODP2;read-write
+Direction of an absolute motion task;0 - Inside Range;;PL.MODPDIR;read-write
+Modulo position enable;0 - Disabled;;PL.MODPEN;read-write
+Programmable limit switch enable;0;;PLS.EN;read-write
+Programmable limit switch mode;0;;PLS.MODE;read-write
+Programmable limit switch pos 1;0;deg;PLS.P1;read-write
+Programmable limit switch pos 2;0;deg;PLS.P2;read-write
+Programmable limit switch pos 3;0;deg;PLS.P3;read-write
+Programmable limit switch pos 4;0;deg;PLS.P4;read-write
+Programmable limit switch pos 5;0;deg;PLS.P5;read-write
+Programmable limit switch pos 6;0;deg;PLS.P6;read-write
+Programmable limit switch pos 7;0;deg;PLS.P7;read-write
+Programmable limit switch pos 8;0;deg;PLS.P8;read-write
+Programmable limit switch reset;0;;PLS.RESET;read-write
+Programmable limit switch status;0;;PLS.STATE;read-only
+Programmable limit switch time 1;500;ms;PLS.T1;read-write
+Programmable limit switch time 2;500;ms;PLS.T2;read-write
+Programmable limit switch time 3;500;ms;PLS.T3;read-write
+Programmable limit switch time 4;500;ms;PLS.T4;read-write
+Programmable limit switch time 5;500;ms;PLS.T5;read-write
+Programmable limit switch time 6;500;ms;PLS.T6;read-write
+Programmable limit switch time 7;500;ms;PLS.T7;read-write
+Programmable limit switch time 8;500;ms;PLS.T8;read-write
+Programmable limit switch units;0;;PLS.UNITS;read-write
+Programmable limit switch width 1;0;deg;PLS.WIDTH1;read-write
+Programmable limit switch width 2;0;deg;PLS.WIDTH2;read-write
+Programmable limit switch width 3;0;deg;PLS.WIDTH3;read-write
+Programmable limit switch width 4;0;deg;PLS.WIDTH4;read-write
+Programmable limit switch width 5;0;deg;PLS.WIDTH5;read-write
+Programmable limit switch width 6;0;deg;PLS.WIDTH6;read-write
+Programmable limit switch width 7;0;deg;PLS.WIDTH7;read-write
+Programmable limit switch width 8;0;deg;PLS.WIDTH8;read-write
+Recorder(scope) - active;0;;REC.ACTIVE;read-only
+Recorder channel 1;IL.FB;;REC.CH1;read-write
+Recorder channel 2;VL.CMD;;REC.CH2;read-write
+Recorder channel 3;VL.FB;;REC.CH3;read-write
+Recorder channel 4;IL.BUSFF;;REC.CH4;read-write
+Recorder channel 5;Empty;;REC.CH5;read-write
+Recorder channel 6;Empty;;REC.CH6;read-write
+Recorder is done;1;;REC.DONE;read-only
+Gap between consecutive samples to record;1;;REC.GAP;read-write
+Number of points to record;1.000;;REC.NUMPOINTS;read-write
+Format of the data retrived after recording;1 - Hexadecimal;;REC.RETRIEVEFRMT;read-write
+The size of the data buffer to read;1.000;;REC.RETRIEVESIZE;read-write
+Configure recorder continuous mode;0;;REC.STOPTYPE;read-write
+Recorder trigger signal bit mask;0;;REC.TRIGMASK;read-write
+Signal used to trigger the recorder;IL.FB;;REC.TRIGPARAM;read-write
+Trigger position within the recording buffer;10;%;REC.TRIGPOS;read-write
+Recorder trigger slope;0 - Negative;;REC.TRIGSLOPE;read-write
+Type of the trigger used by the recorder;0 - Immediate;;REC.TRIGTYPE;read-write
+Recorder trigger level;0;;REC.TRIGVAL;read-write
+Regen resistor instantaneous power;0;W;REGEN.POWER;read-only
+Regen resistor integrated dissipated power;0;W;REGEN.POWERFILTERED;read-only
+External regen resistor resistance;330;Ohm;REGEN.REXT;read-write
+Regen resistor text;100;s;REGEN.TEXT;read-write
+Regen resistor type;0 - Internal Regen (if available);;REGEN.TYPE;read-write
+Regen resistor parameter;1.000;W;REGEN.WATTEXT;read-write
+Service motion current 1;0,447;Arms;SM.I1;read-write
+Service motion current 2;-0,447;Arms;SM.I2;read-write
+Service motion mode;0;;SM.MODE;read-write
+Service motion time 1 - all operation modes;500;ms;SM.T1;read-write
+Service motion time 2 - all operation modes;500;ms;SM.T2;read-write
+Service motion velocity 1 - velocity operation mode;359,999;deg/s;SM.V1;read-write
+Service motion velocity 2 - velocity operation mode;-359,999;deg/s;SM.V2;read-write
+Status of safe torque off;1;;STO.STATE;read-only
+Position software limit enable;0;;SWLS.EN;read-write
+Position software limit switch - 0;0;deg;SWLS.LIMIT0;read-write
+Position software limit switch - 1;5.760,00;deg;SWLS.LIMIT1;read-write
+Position software limit status;0;;SWLS.STATE;read-only
+Temperature of the control board;34;degC;TEMP.CONTROL;read-only
+Linear acceleration and deceleration units;0 - Counts/s^2;Counts/s^2;UNIT.ACCLINEAR;read-write
+Rotary acceleration and deceleration units;0 - RPM/s (motor shaft);rpm/s;UNIT.ACCROTARY;read-write
+Custom units label;cm;;UNIT.LABEL;read-write
+Custom units input scale factor;1;;UNIT.PIN;read-write
+Linear position units;0 - Counts;Counts;UNIT.PLINEAR;read-write
+Custom units output scale factor;1;;UNIT.POUT;read-write
+Rotary position units;2 - Degree (motor shaft);deg;UNIT.PROTARY;read-write
+Linear velocity units;0 - Counts/s;Counts/s;UNIT.VLINEAR;read-write
+Rotary velocity units;2 - Degree/s (motor shaft);deg/s;UNIT.VROTARY;read-write
+Drive Power Type;0 - Full;;VBUS.HALFVOLT;read-write
+Over voltage fault level;420;Vdc;VBUS.OVFTHRESH;read-only
+Over voltage warning threshold;0;Vdc;VBUS.OVWTHRESH;read-write
+Limit for bus capacitors load;11;Vrms;VBUS.RMSLIMIT;read-only
+Under voltage fault level;90;Vdc;VBUS.UVFTHRESH;read-write
+Under voltage mode;1 - Only when drive enabled;;VBUS.UVMODE;read-write
+Under voltage warning threshold;100;Vdc;VBUS.UVWTHRESH;read-write
+Bus voltage;324,594;Vdc;VBUS.VALUE;read-only
+Denominator Frequency 1;211,447;Hz;VL.ARPF1;read-write
+Denominator Frequency 2;500;Hz;VL.ARPF2;read-write
+Denominator Frequency 3;1.904,76;Hz;VL.ARPF3;read-write
+Denominator Frequency 4;1.904,76;Hz;VL.ARPF4;read-write
+Denominator Q1;0,707;;VL.ARPQ1;read-write
+Denominator Q2;0,5;;VL.ARPQ2;read-write
+Denominator Q3;0,707;;VL.ARPQ3;read-write
+Denominator Q4;0,707;;VL.ARPQ4;read-write
+Anti resonance type 1;5 - VL.ARTYPE1;;VL.ARTYPE1;read-write
+Anti resonance type 2;5 - VL.ARTYPE2;;VL.ARTYPE2;read-write
+Anti resonance type 3;5 - VL.ARTYPE3;;VL.ARTYPE3;read-write
+Anti resonance type 4;5 - VL.ARTYPE4;;VL.ARTYPE4;read-write
+Numerator Frequency 1;595,938;Hz;VL.ARZF1;read-write
+Numerator Frequency 2;500;Hz;VL.ARZF2;read-write
+Numerator Frequency 3;5.000,00;Hz;VL.ARZF3;read-write
+Numerator Frequency 4;5.000,00;Hz;VL.ARZF4;read-write
+Numerator Q1;0,707;;VL.ARZQ1;read-write
+Numerator Q2;0,5;;VL.ARZQ2;read-write
+Numerator Q3;0,707;;VL.ARZQ3;read-write
+Numerator Q4;0,707;;VL.ARZQ4;read-write
+External feed-forward;0;deg/s;VL.BUSFF;read-only
+Velocity command;0;deg/s;VL.CMD;read-only
+Velocity loop command - user;0;deg/s;VL.CMDU;read-write
+Velocity loop error;0,127;deg/s;VL.ERR;read-only
+Velocity feedback;0,052;deg/s;VL.FB;read-only
+Velocity feedback filter;0;deg/s;VL.FBFILTER;read-only
+Feedback source for the velocity loop;0 - Feedback 1;;VL.FBSOURCE;read-write
+Unfiltered Velocity Feedback;0,028;deg/s;VL.FBUNFILTERED;read-only
+Velocity overall feed-forward;0;deg/s;VL.FF;read-only
+Velocity loop - velocity generation mode;0 - Low Pass Filter;;VL.GENMODE;read-write
+External feed-forward gain;0;;VL.KBUSFF;read-write
+Velocity loop integral gain;6,243;Hz;VL.KI;read-write
+Velocity Loop KO;0;(rad/s^2)/A;VL.KO;read-write
+Velocity loop proportional gain;0,26;Arms/(rad/s);VL.KP;read-write
+Velocity feed-forward gain;1;;VL.KVFF;read-write
+Velocity lower limit;-18.000,00;deg/s;VL.LIMITN;read-write
+Velocity upper limit;18.000,00;deg/s;VL.LIMITP;read-write
+Inertia ratio;0;;VL.LMJR;read-write
+Velocity loop model;0,003;deg/s;VL.MODEL;read-only
+Observer BandWidth;30;Hz;VL.OBSBW;read-write
+Observer Mode;0 - No Observer;;VL.OBSMODE;read-write
+Velocity loop user over-speed limit;43.315,00;deg/s;VL.THRESH;read-write
+Velocity loop overall over-speed limit;43.315,00;deg/s;VL.VFTHRESH;read-only
+Commutation checking mode at the end of W&S process;1 - Active;;WS.CHECKMODE;read-write
+W&S: Time during which a communication error must be present before an error is thrown;10;ms;WS.CHECKT;read-write
+W&S: Velocity threshold which has to be exceeded to activate commutation monitoring;599,994;deg/s;WS.CHECKV;read-write
+Maximum movement;15;deg;WS.DISTMAX;read-write
+Minimum movement;1;deg;WS.DISTMIN;read-write
+Sine excitation frequency (mode 2);10;Hz;WS.FREQ;read-write
+Maximum current;1;Arms;WS.IMAX;read-write
+Wake and shake Mode;0 - Standard Wake and Shake;;WS.MODE;read-write
+Number of repetitions;5;;WS.NUMLOOPS;read-write
+Reads wake and shake status;11;;WS.STATE;read-only
+Current-vector appliance time;2;ms;WS.T;read-write
+Delay time between current steps;5;ms;WS.TDELAY1;read-write
+Delay time between coarse angle and fine angle;50;ms;WS.TDELAY2;read-write
+Delay time between loops in mode 0;100;ms;WS.TDELAY3;read-write
+Delay time after first current-pulse injection;2.000;ms;WS.TDELAY4;read-write
+Time for the ramp up current in Wake & Shake mode 1;512;ms;WS.TIRAMP;read-write
+Duration while the motor is held in position with current to get the motor phase;1.000;ms;WS.TSTANDSTILL;read-write
+Maximum velocity;599,999;deg/s;WS.VTHRESH;read-write
